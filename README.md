@@ -58,3 +58,7 @@ Policy
  - Now you should be ready to write/read from the queue.
 
  A sample console app which connects to local IBM MQ container instance is include for references.
+
+ #Commands
+
+ docker run --env LICENSE=accept --env MQ_QMGR_NAME=QM1 --publish 1414:1414 --publish 9443:9443 --detach --env MQ_APP_PASSWORD=passw0rd ibmcom/mq:latest
